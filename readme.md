@@ -16,7 +16,8 @@ This project was created as part of the 14 Days CSS Challenge. The task for Day 
 
 ## Screenshots
 
-![Hospital Landing Page](screenshots/hospital-landing-page.png)
+![Hospital Landing Page](![image](https://github.com/rajanarahul93/Hospital-Landing-Page./assets/123227543/33f1a799-38ee-48ca-8e42-0f21b7cf676e))(![image](https://github.com/rajanarahul93/Hospital-Landing-Page./assets/123227543/c9ab057b-00cc-4dbf-b8db-5f72cad55557)
+
 
 
 ## Getting Started
