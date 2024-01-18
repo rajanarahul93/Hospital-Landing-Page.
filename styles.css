@@ -1,0 +1,145 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url("hospital\ Building.webp");
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-us, .services, .testimonials, .contact {
+    margin-bottom: 40px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.about-us:hover, .services:hover, .testimonials:hover, .contact:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-us h2, .services h2, .testimonials h2, .contact h2 {
+    margin-bottom: 20px;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.testimonial-box {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-box:hover {
+    transform: translateY(-10px);
+}
+
+.testimonial {
+    text-align: left;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.author {
+    font-style: italic;
+    color: #777;
+}
+
+.contact a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+    color: #e74c3c;
+}
+
+.cta-button, .nav-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #3498db, #e74c3c);
+    border: 2px solid #e74c3c;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.cta-button::before, .nav-button::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 40px;
+    background: linear-gradient(45deg, #3498db, #e74c3c);
+    z-index: -1;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cta-button:hover, .nav-button:hover {
+    background: linear-gradient(45deg, #e74c3c, #3498db);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:hover::before, .nav-button:hover::before {
+    transform: scale(1.1);
+    animation: pulsate 1s infinite;
+}
+
+@keyframes pulsate {
+    0%, 50%, 100% {
+        transform: scale(1);
+    }
+    25%, 75% {
+        transform: scale(1.05);
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(45deg, #333, #555);
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
