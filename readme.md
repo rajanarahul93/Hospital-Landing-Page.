@@ -24,7 +24,7 @@ This project was created as part of the 14 Days CSS Challenge. The task for Day 
 
 Follow these steps to set up the project locally:
 
-1. Clone the repository: `git clone [repo-link]`
+1. Clone the repository: `git clone https://github.com/rajanarahul93/Hospital-Landing-Page`
 2. Open `index.html` in your preferred browser.
 
 ## Contributing
